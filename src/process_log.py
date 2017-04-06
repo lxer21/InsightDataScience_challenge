@@ -158,13 +158,13 @@ if __name__ == '__main__':
         f1.write('\n')
     f1.close()
     outputlist=count_Bandwidths_once(inFile)  
-    f2=open(outFile_2,'w')
+    f2=open(outFile_3,'w')
     for item in outputlist:
         f2.write(item[0])
         f2.write('\n')
     f2.close()
     outputlist=count_Hours_once(inFile)  
-    f3=open(outFile_3,'w')
+    f3=open(outFile_2,'w')
     for item in outputlist:
         f3.write(str(item[0].strip('[]')+','+str(item[1])))
         f3.write('\n')
